@@ -10,7 +10,7 @@ const CartPage = (props) => {
 
     const [total, setTotal] = useState(0);
     useEffect(() => {
-        const prices = cart.map((item) => data[(data.map((item) => item.id)).indexOf(item.id)].price);
+        const prices = cart.map((item) => data[(data.map((item) => item.id)).indexOf(item.id)].price*item.qty);
 
         setTotal(prices.reduce((a,b) => a + b, 0));
 

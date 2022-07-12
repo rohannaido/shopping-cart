@@ -29,6 +29,19 @@
 }
 
 .product-card-button-div{
+    margin: 0 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product-card-qty-selector{
+    font-size: 1.5rem;
+}
+
+.qty-selector{
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
 }
