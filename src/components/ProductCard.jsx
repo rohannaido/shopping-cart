@@ -16,7 +16,7 @@ const ProductCard = (props) => {
             ₹{data.price}
             </p>
             <div className="product-card-button-div">
-                <button className="add-to-cart-btn" onClick={() => addToCart(data.id)}>Add to Cart</button>
+                <button className="add-to-cart-btn" onClick={() => addToCart(data.id, 1)}>Add to Cart</button>
             </div>
         </div>
     )

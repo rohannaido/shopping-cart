@@ -6,8 +6,8 @@ import './styles/Shop.css'
 
 const Shop = (props) => {
 
-    const addToCart = (id) => {
-        props.setCart((prev) => [...prev, id])
+    const addToCart = (id, qty) => {
+        props.setCart((prev) => [...prev, {id, qty}])
     }
 
     return (
