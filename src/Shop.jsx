@@ -7,7 +7,12 @@ import './styles/Shop.css'
 const Shop = (props) => {
 
     const addToCart = (id, qty) => {
-        props.setCart((prev) => [...prev, {id, qty}])
+        props.setCart((prev) => {
+            if(!prev.filter((item) => item.id === id).length){
+                return [...prev, {id, qty}]
+            }
+            return prev;
+        })
     }
 
     return (
