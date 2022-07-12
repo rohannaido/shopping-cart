@@ -1,7 +1,8 @@
 import '../styles/ProductCard.css'
+import '../App.css'
 
 const ProductCard = (props) => {
-    const { data } = props;
+    const { data, addToCart } = props;
 
     return (
         <div className="product-card-div">
@@ -14,6 +15,9 @@ const ProductCard = (props) => {
             <p className="product-card-price">
             ₹{data.price}
             </p>
+            <div className="product-card-button-div">
+                <button className="add-to-cart-btn" onClick={() => addToCart(data.id)}>Add to Cart</button>
+            </div>
         </div>
     )
 }

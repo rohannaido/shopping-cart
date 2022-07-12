@@ -4,18 +4,20 @@ import ProductCard from "./components/ProductCard";
 import data from  './data'
 import './styles/Shop.css'
 
-console.log(data);
-// const data
+const Shop = (props) => {
 
-const Shop = () => {
+    const addToCart = (id) => {
+        props.setCart((prev) => [...prev, id])
+    }
+
     return (
-        <>
-            <NavBar />
+        <div className="shop-div">
+            <NavBar cart={props.cart} />
                 <div className="product-list-div">
-                    {data.map((item) => <ProductCard data={item} />)}   
+                    {data.map((item) => <ProductCard data={item} addToCart={addToCart} />)}
                 </div>
             <Footer />
-        </>
+        </div>
     )
 }
 
