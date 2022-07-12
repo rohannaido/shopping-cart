@@ -1,10 +1,9 @@
 .cart-item-div{
-    /* border: 1px solid black; */
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     height: 150px;
     width: 400px;
     display: flex;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .no-items-div{

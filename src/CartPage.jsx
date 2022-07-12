@@ -3,6 +3,7 @@ import CartItem from "./components/CartItem";
 import data from './data';
 import './styles/CartPage.css';
 import {useEffect, useState} from 'react'
+import Footer from "./components/Footer";
 
 const CartPage = (props) => {
 
@@ -39,6 +40,7 @@ const CartPage = (props) => {
                     </div>
                 }
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 nav{
-    height: 50px;
-    background-color: gray;
+    height: 60px;
+    background-color: #0f172a;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,8 @@ nav{
 .logo-text{
     font-size: 1.5rem;
     margin: 0 1rem;
+    letter-spacing: 5px;
+    font-size: 2rem;
 }
 
 .navbar-list{
@@ -28,4 +30,5 @@ nav{
 ul.navbar-list li{
     margin: 0 1rem;
     cursor: pointer;
+    font-weight: bold;
 }
