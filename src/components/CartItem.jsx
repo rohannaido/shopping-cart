@@ -17,6 +17,9 @@ const CartItem = (props) =>{
                 <p className="cart-item-qty">
                     Qty: {qty}
                 </p>
+                <p className="cart-item-price">
+                    Price: ₹{data.price}
+                </p>
             </div>
         </div>
     )

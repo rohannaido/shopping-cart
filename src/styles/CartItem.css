@@ -1,7 +1,7 @@
 .cart-item-div{
     /* border: 1px solid black; */
     border-bottom: 1px solid black;
-    height: 100px;
+    height: 150px;
     width: 400px;
     display: flex;
     margin: 0.5rem;
@@ -16,10 +16,12 @@
 
 .cart-item-img-div{
     height: 100%;
+    width: 150px;
 }
 
 .cart-item-img-div img{
     height: 100%;
+    object-fit: contain;
 }
 
 .cart-item-text-div{
@@ -29,10 +31,10 @@
     padding: 1rem 0;
 }
 
-.cart-item-itemname{
+.cart-item-text-div p{
     margin: 0;
 }
 
-.cart-item-qty{
-    margin: 0;
+.cart-item-itemname{
+    font-weight: bolder;
 }
