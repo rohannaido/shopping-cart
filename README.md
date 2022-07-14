@@ -1,5 +1,5 @@
 # Shopping Cart Project 🛒
 
-This is a ReactJS project with routing.
+This is a ReactJS project with routing and add to cart functionality.
 
-Link: 
+Link: https://rohannaido.github.io/shopping-cart/.
